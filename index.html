@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <title>U Are Brouk</title>
+    <link href="./css/style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body class="languageEn" style="background: linear-gradient(180deg, #B23467 0%, #17182C 100%);">
+    <div class="screen preloader ">
+        <div class="preloader-progress-wrapper">
+            <div class="preloader-progress-count"><span id="preloader-progress-count">30</span>%</div>
+            <div class="prelodaer-progress-bar">
+                <div style="width: 30%;" class="prelodaer-progress-bar-line"></div>
+            </div>
+        </div>
+    </div>
+    <div class="screen screen-welcome hidden">
+        <span lang="en" class="screen-welcome-title">Welcome!</span>
+        <span lang="ru" class="screen-welcome-title">Добро пожаловать!</span>
+        <div class="select-lang-title" lang="en">Select the interface language:</div>
+        <div class="select-lang-title" lang="ru">Выберите язык интерфейса:</div>
+
+        <div class="select-lang">
+            <span class="option option-select">English</span>
+            <div class="select-lang-options">
+                <div class="option" data-lang="en">English</div>
+                <div class="option" data-lang="ru">Русский</div>
+            </div>
+
+        </div>
+        <div class="button-action" onclick="openPersonSelect(this)">
+            <span lang="en">Continue</span>
+            <span lang="ru">Далее</span>
+        </div>
+    </div>
+
+    <div class="screen screen-select-person hidden">
+        <span lang="en" class="screen-welcome-title">Welcome!</span>
+        <span lang="ru" class="screen-welcome-title">Добро пожаловать!</span>
+        <div class="select-lang-title" lang="en">We present to you the participants of the game. <br> Choose the one you
+            like the most.</div>
+        <div class="select-lang-title" lang="ru">Представляем вам участников игры. Выбирайте того, кто вам больше всего
+            понравился.</div>
+
+        <div class="person-swiper">
+            <div class="person">
+                <div class="person-title">
+                    <span lang="en">Basim</span>
+                    <span lang="ru">Басим</span>
+                </div>
+                <div class="person-img">
+                    <img src="./images/basim.png" alt="basim">
+                </div>
+                <div class="person-desc-container">
+                    <div class="person-desc person-desc-country">
+                        <div lang="en">
+                            <div class="desc-title">Country:</div>
+                            <div class="desc">United Arab Emirates</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Страна:</div>
+                            <div class="desc">ОАЭ</div>
+                        </div>
+                    </div>
+                    <div class="person-desc person-desc-business">
+                        <span lang="en">
+                            <div class="desc-title">Business:</div>
+                            <div class="desc">Oil company</div>
+                        </span>
+                        <span lang="ru">
+                            <div class="desc-title">Бизнес:</div>
+                            <div class="desc">Нефтяная компания</div>
+                        </span>
+                    </div>
+                    <div class="person-desc person-desc-money">
+                        <div lang="en">
+                            <div class="desc-title">Money turnover/year:</div>
+                            <div class="desc">340 982 627$</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Оборот денег/год:</div>
+                            <div class="desc">340 982 627$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div class="person-title">
+                    <span lang="en">Alexander</span>
+                    <span lang="ru">Александр</span>
+                </div>
+                <div class="person-img">
+                    <img src="./images/alex.png" alt="">
+                </div>
+                <div class="person-desc-container">
+                    <div class="person-desc person-desc-country">
+                        <div lang="en">
+                            <div class="desc-title">Country:</div>
+                            <div class="desc">Russia</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Страна:</div>
+                            <div class="desc">Россия</div>
+                        </div>
+                    </div>
+                    <div class="person-desc person-desc-business">
+                        <span lang="en">
+                            <div class="desc-title">Business:</div>
+                            <div class="desc">Construction company</div>
+                        </span>
+                        <span lang="ru">
+                            <div class="desc-title">Бизнес:</div>
+                            <div class="desc">Строительная компания</div>
+                        </span>
+                    </div>
+                    <div class="person-desc person-desc-money">
+                        <div lang="en">
+                            <div class="desc-title">Money turnover/year:</div>
+                            <div class="desc">184 982 627$</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Оборот денег/год:</div>
+                            <div class="desc">184 982 627$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="person">
+                <div class="person-title">
+                    <span lang="en">Tommy</span>
+                    <span lang="ru">Томми</span>
+                </div>
+                <div class="person-img">
+                    <img src="./images/tommy.png" alt="">
+                </div>
+                <div class="person-desc-container">
+                    <div class="person-desc person-desc-country">
+                        <div lang="en">
+                            <div class="desc-title">Country:</div>
+                            <div class="desc">Томми</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Страна:</div>
+                            <div class="desc">ОАЭ</div>
+                        </div>
+                    </div>
+                    <div class="person-desc person-desc-business">
+                        <span lang="en">
+                            <div class="desc-title">Business:</div>
+                            <div class="desc">Социальные сети</div>
+                        </span>
+                        <span lang="ru">
+                            <div class="desc-title">Бизнес:</div>
+                            <div class="desc">Нефтяная компания</div>
+                        </span>
+                    </div>
+                    <div class="person-desc person-desc-money">
+                        <div lang="en">
+                            <div class="desc-title">Money turnover/year:</div>
+                            <div class="desc">220 982 627$</div>
+                        </div>
+                        <div lang="ru">
+                            <div class="desc-title">Оборот денег/год:</div>
+                            <div class="desc">220 982 627$</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-action">
+            <span lang="en">Select and continue</span>
+            <span lang="ru">Выбрать и продолжить</span>
+        </div>
+    </div>
+
+    <script src="js/script.js?v=3489819854082357"></script>
+
+</body>
+
+</html>

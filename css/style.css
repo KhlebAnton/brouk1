@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Medium.woff2') format('woff2'),
+        url('../fonts/Jost-Medium.woff') format('woff');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Bold.ttf');
+    font-weight: 700;
+
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Light.ttf');
+    font-weight: 400;
+
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    min-height: 100vh;
+    width: 100vw;
+    font-family: 'Jost', sans-serif;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+body [lang=en],
+body [lang=ru] {
+    display: none;
+}
+
+.languageRu [lang=ru] {
+    display: block;
+}
+
+.languageEn [lang=en] {
+    display: block;
+}
+
+.screen {
+    position: absolute;
+    min-height: 100%;
+    width: 100%;
+    transition: .2s;
+    padding: 14px 18px;
+}
+
+.screen.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.screen.preloader {
+    background: url('../images/bg-preloader.png') 50% / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.preloader-progress-wrapper {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 58px;
+}
+
+.preloader-progress-count {
+    font-weight: 700;
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.prelodaer-progress-bar {
+    width: 100%;
+    height: 27px;
+    border: 1.74px solid #FFFFFF;
+    border-radius: 45px;
+    padding: 6px;
+}
+
+.prelodaer-progress-bar-line {
+    border-radius: 10px;
+    height: 100%;
+    background: linear-gradient(296.64deg, #83CEDF 16.61%, #3199A8 86.81%);
+    transition: .2s;
+}
+
+.screen-welcome,
+.screen-select-person {
+    text-align: center;
+}
+
+.screen-welcome-title {
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.select-lang-title {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.select-lang {
+    width: 100%;
+    min-height: 79px;
+    border-radius: 14px;
+    background-color: inherit;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: left;
+    border-radius: 14px;
+    padding: 0 14px;
+
+
+
+    margin: 24px 0;
+    position: relative;
+    border: 1px solid #ffffff93;
+}
+
+.option-select {
+    height: 79px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #51440140;
+    position: relative;
+}
+
+.option-select::after {
+    position: absolute;
+    right: 0;
+    content: '\25B8';
+    transform: rotate(90deg);
+}
+
+.select-lang-options .option {
+    padding: 14px 0 24px 0;
+}
+
+.select-lang .select-lang-options {
+    display: none;
+}
+
+.select-lang-open .select-lang-options {
+    display: block;
+}
+
+.button-action {
+    font-weight: 700;
+    font-size: 20px;
+    width: 100%;
+    height: 79px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    background: linear-gradient(180deg, #B23467 0%, #17182C 100%);
+    border: 1px solid #F6D31B;
+    border-radius: 14px;
+}
+
+.person-swiper {
+    margin: 24px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 18px;
+    overflow-x: scroll;
+}
+
+.person {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.person-title {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+.person-img {
+    padding: 0 24px;
+}
+.person-desc-container {
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+}
+
+.person-desc {
+    background: linear-gradient(88.6deg, rgba(0, 0, 0, 0) -28.22%, rgba(255, 255, 255, 0.2) 99.58%);
+    border-radius: 14px;
+    border: 1px solid #ffffff63;
+    padding: 14px;
+}
+
+.desc-title {
+    opacity: 0.9;
+    font-weight: 700;
+}
+
+.person-desc-country {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.person-desc-business {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.person-desc-money {
+    grid-area: 2 / 1 / 3 / 3;
+}
