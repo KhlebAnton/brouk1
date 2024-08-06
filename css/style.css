@@ -185,6 +185,7 @@ body [lang=ru] {
     flex-wrap: nowrap;
     gap: 18px;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
 .person {
@@ -192,6 +193,7 @@ body [lang=ru] {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    scroll-snap-align: center;
 }
 
 .person-title {
