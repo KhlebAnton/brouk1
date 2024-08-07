@@ -553,13 +553,14 @@ body [lang=ru] {
     -o-transform: translateX(2rem);
     transform: translateX(2rem);
   }
-  .screen-instruction {
+  .screen-instruction, .screen-banner {
     background: #17182cf1;
 
   }
 
   .instruction-block {
     position: relative;
+    pointer-events: none;
     z-index: 5;
     top: -98px;
   }
@@ -625,8 +626,19 @@ body [lang=ru] {
 
   }
   
-  .screen-instruction {
+  .screen-instruction, .screen-banner {
     display: flex;
     flex-direction: column;
     justify-content: end;
+  }
+  .banner-info {
+    position: fixed;
+    padding: 14px 12px;
+    width: 90%;
+    left: 5%;
+    top: 45%;
+    background: url('../images/icons/banner-bg.svg') 50% / 100% 100% no-repeat;
+  }
+  .banner-info.hidden {
+    display: none;
   }

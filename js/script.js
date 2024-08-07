@@ -197,9 +197,30 @@ function nextInfo() {
         countInfo++;
     } else {
         instructionList[countInstr - 1].classList.remove('instruction-block');
-        hideScreenInst()
+        hideScreenInst();
+        showBannerScr();
     }
+}
 
+// banner screen
+const bannerScreen = document.querySelector('.screen-banner');
+const btnNextBanner = document.getElementById('btn-next-banner')
+function showBannerScr() {
+    bannerScreen.classList.remove('hidden');
+};
+function hideBannerScr() {
+    bannerScreen.classList.add('hidden');
+};
 
+const bannerList = document.querySelectorAll('.banner-info');
+let activeBanner = bannerList[0];
+function nextBanner() {
+    if (activeBanner.nextElementSibling && activeBanner.nextElementSibling != btnNextBanner) {
+        activeBanner.nextElementSibling.classList.remove('hidden');
+        activeBanner.classList.add('hidden');
+        activeBanner = activeBanner.nextElementSibling;
+    } else {
+        hideBannerScr()
+    }
 
 }
