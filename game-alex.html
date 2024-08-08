@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, user-scalable=0">
+    <title>U Are Brouk</title>
+    <link href="./css/style.css?v=34891123" type="text/css" rel="stylesheet">
+</head>
+
+<body class="languageEn" style="background: linear-gradient(180deg, #17182C 0%, #17182C 100%);">
+    <div class="screen screen-game ">
+        <div class="game-header">
+            <div class="icon-gradient">
+                <div class="game-header-icon">
+                    <img class="game-header-icon-img" src="./images/user.png" alt="">
+                </div>
+            </div>
+
+            <div class="game-header-hello">Welcome back, <span class="game-header-hello-name">RR</span>!</div>
+            <div class="btn-earn-gradient header-btn-top" onclick="window.location.href = './tasks.html'" >
+                <div class="btn-earn " style="background: linear-gradient(180deg, #4D5088 0%, #17182C 100%);">EARN</div>
+               
+            </div>
+
+        </div>
+        <div class="game-btn-top-container">
+            <div class="game-btn-top btn-top-money top">
+
+                <div class="game-btn-top-title">
+                    <span>100$</span>
+                </div>
+                <div class="game-btn-top-desc">
+                    <span>loose per tap</span>
+                </div>
+            </div>
+            
+            <div class="game-btn-top btn-top-check top" onclick="window.location.href = './friends.html'">
+                <div class="game-btn-top-title">
+                    <span>Check</span>
+                </div>
+                <div class="game-btn-top-desc">
+                    <span>your friends</span>
+                </div>
+            </div>
+           
+            <div class="game-btn-top btn-top-boost top" onclick="window.location.href = './boosts.html'">
+                <div class="game-btn-top-title">
+                    <span>Boost</span>
+                </div>
+                <div class="game-btn-top-desc">
+                    <span>your loose</span>
+                </div>
+            </div>
+           
+        </div>
+        <div class="user-info header-btn-top" onclick="window.location.href = './leaderboard-alex.html'">
+            
+            <div class="user-info-progress-bar">
+                <div style="width: 40%;" class="user-info-progress-line"></div>
+            </div>
+            <div class="user-info-footer">
+                <div class="user-info-footer-energy">
+                    <span>Energy:</span>
+                    <span class="user-energy" id="user-energy">1.44k</span>
+                </div>
+                <div class="user-info-footer-level">
+                    <span class="user-level" id="user-level">1</span> <span>LVL | </span>
+                    <span class="user-level-desc">balance to next level</span>
+                </div>
+            </div>
+        </div>
+        <div style="background-image: url(./images/alex.png);" class="user-tap js-tap user-background-img black-gradient"
+            data-count="-1">
+
+        </div>
+        <div class="user-info-footer-btn-container">
+            <div class="user-info-footer-btn btn-total-coin">
+                <span id="btn-total-coin">8982627</span><span>$</span>
+            </div>
+            <div class="user-info-footer-btn btn-footer-sell" onclick="window.location.href = './sell-alex.html'">
+                
+                <span>SELL PROPERTY</span>
+            </div>
+            <div class="user-info-footer-btn btn-footer-buy " onclick="window.location.href = './buy-alex.html'">
+                
+                <span>BUY CRYPTO</span>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <script src="js/tap.js?v=34898198540134557"></script>
+</body>
+
+</html>
