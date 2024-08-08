@@ -870,6 +870,7 @@ linear-gradient(180deg, rgba(36, 26, 49, 0) 83.45%, #241A31 100%);
     border-radius: 14px;
     background: url('../images/btn-user-footer.svg');
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     padding: 0 14px;
     display: flex;
     align-items: center;
