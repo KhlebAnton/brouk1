@@ -229,6 +229,7 @@ body [lang=ru] {
 }
 
 .person-img {
+    height: 235px;
     padding: 0 24px;
     position: relative;
 }
